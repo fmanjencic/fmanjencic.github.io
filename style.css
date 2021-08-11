@@ -145,7 +145,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 #project-container img {
     height: auto;
-    width: 22em;
+/*    width: 22em;*/
     margin-left: 10em;
     transition: all 1s;
     cursor: pointer;
@@ -189,6 +189,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .project-title {
     margin-bottom: 1em;
 }
+
+#quote-image {
+    height: auto;
+    width: 32rem;
+    margin-left: 0;
+    border: solid 3px black;
+}
+
+
 
 /*CONTACT*/
 
@@ -251,5 +260,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         margin-left: 0;
         margin-top: 3em;
         margin-left: 3em;
+    }
+    
+    #quote-image {
+        width: 22rem;
     }
 }
