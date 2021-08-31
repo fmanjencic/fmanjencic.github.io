@@ -107,6 +107,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     grid-template-columns: auto auto;
 }
 
+.about img {
+    max-width: 16em;
+    height: auto;
+    margin-right: 30%;
+    border-radius: 10px;
+}
+
 p {
     margin-left: 3em;
     margin-right: 3em;
@@ -121,8 +128,32 @@ p {
     background-color: maroon;
     height: auto;
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
+
 }
+
+#resume-btn {
+    height: 2.5em;
+    width: 10em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: linear-gradient(to right, maroon 50%, white 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all .3s ease-out;
+}
+
+#resume-btn:hover {
+    background-position: left bottom;
+    color: white;
+    border: 2px solid white;
+}
+
+/*PROJECTS*/
 
 .projects {
     display: flex;
@@ -144,18 +175,46 @@ display: flex;
 .project-btn {
     margin-bottom: 2em;
     margin-left: 7em;
-    margin-right: 7em; 
+    margin-right: 7em;
+    height: 2.5em;
+    width: 8em; 
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: linear-gradient(to right, maroon 50%, white 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    font-weight: bolder;
+    transition: all .3s ease-out;
 }
 
-#project-header {
+.project-btn:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+.project-header {
     display: flex;
     justify-content: center;
     margin: 2em;
 }
 
+/*.project-header:hover {
+    border-bottom: 2px solid maroon;
+    cursor: pointer;
+}*/
+
 img {
     width: 500px;
     max-height: 400px
+}
+
+.projects img {
+    transition: all 1s;
+    cursor: pointer;
+}
+.projects img:hover {
+    transform: scale(1.1);
 }
 
 
@@ -166,6 +225,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+    }
+
+    .about img {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 10px;
     }
     
     #grid {
@@ -184,7 +251,18 @@ img {
     .project-btn {
         margin-left: 1em;
         margin-right: 1em;
+
     }
+}
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: darkgrey;
+    width: auto;
+    height: 12rem;
 }
 
 @media screen and (max-width: 680px) {
