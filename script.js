@@ -1,3 +1,5 @@
+// Scroll bar functionality
+
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
