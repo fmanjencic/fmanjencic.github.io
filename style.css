@@ -90,7 +90,8 @@ body {
     margin-bottom: 0;
     display: flex;
     justify-content: center;
-    padding-top: 2em
+    padding-top: 2em;
+    font-family: 'Russo One', sans-serif;
 }
 
 .about {
@@ -231,7 +232,14 @@ img {
     background-color: darkgrey;
     width: auto;
     margin-bottom: 0;
-    height: 5rem;
+    height: 6rem;
+}
+
+#ftr-img {
+  width: 5em;
+  height: 5em;
+  padding: 1em;
+  cursor: pointer;
 }
 
 /*MEDIA QUERIES TABLET OR SMALLER*/
